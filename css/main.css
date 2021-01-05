@@ -45,7 +45,6 @@ main {
   margin: 0;
   padding: 0;
   position: relative;
-
 }
 
 .pano img {
@@ -61,7 +60,6 @@ main {
   z-index: 100;
   bottom: 1rem;
   margin: 1rem;
-
 }
 
 .artemis {
