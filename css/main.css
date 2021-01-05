@@ -1,6 +1,6 @@
 html {
   box-sizing: border-box;
-  font-family: 'Merriweather', serif;
+  font-family: Merriweather, serif;
   line-height: 1.5;
 }
 
@@ -14,5 +14,93 @@ body {
 }
 
 img {
+  display: flex;
   width: 100%;
+}
+
+header {
+  margin: 1rem;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 1.8rem;
+  font-weight: normal;
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "pano pano pano"
+    "artemis colossus gardens";
+  grid-column-gap: .75rem;
+  grid-row-gap: .75rem;
+}
+
+.pano {
+  display: grid;
+  grid-area: pano;
+  margin: 0;
+  padding: 0;
+  position: relative;
+
+}
+
+.pano img {
+  display: grid;
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  align-self: center;
+}
+
+.pano-caption {
+  display: grid;
+  position: absolute;
+  z-index: 100;
+  bottom: 1rem;
+  margin: 1rem;
+
+}
+
+.artemis {
+  display: grid;
+  grid-area: artemis;
+}
+
+.colussus {
+  grid-area: colossus;
+}
+
+.gardens {
+  grid-area: gardens;
+}
+
+h2 {
+  font-family: Merriweather;
+  font-style: italic;
+  margin-bottom: 0;
+}
+
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+dt {
+  font-family: Merriweather;
+  font-style: italic;
+}
+
+.pano-h2 {
+  color: #fff;
+  font-style: italic;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.pano-p {
+  color: #fff;
+  margin-top: 0;
 }
