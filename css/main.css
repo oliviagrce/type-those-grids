@@ -14,8 +14,8 @@ body {
 }
 
 img {
-  display: flex;
   width: 100%;
+  margin-bottom: 1rem;
 }
 
 header {
@@ -51,7 +51,7 @@ main {
   display: grid;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
-  align-self: center;
+  align-self: stretch;
 }
 
 .pano-caption {
@@ -79,6 +79,7 @@ h2 {
   font-family: Merriweather;
   font-style: italic;
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 dl {
