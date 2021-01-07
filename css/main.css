@@ -15,7 +15,8 @@ body {
 
 img {
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
+  align-self: auto;
 }
 
 header {
@@ -26,6 +27,7 @@ h1 {
   font-style: italic;
   font-size: 1.8rem;
   font-weight: normal;
+  margin: 1rem;
 }
 
 main {
@@ -51,7 +53,7 @@ main {
   display: grid;
   grid-column: 1 / 4;
   grid-row: 1 / 2;
-  align-self: stretch;
+  align-self: auto;
 }
 
 .pano-caption {
